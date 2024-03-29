@@ -1,0 +1,32 @@
+{
+  "name": "pi-node",
+  "version": "1.0.0",
+  "description": "COMANDOS GIT\r - git init\r - git add . // add files or folders to repository local\r - git commit -m \"add README.md\"\r - git log //lista os logs de commits\r - git branch //mostra qual branch estou e lista todas\r - git branch [nome-branch] // cria uma nova branch local\r - git checkout [nome-branch] //muda para a branch escolida\r - git checkout -b [nome-branch] // cria uma nova branch local e muda para ela\r - git merge [nome-branch] //Combina as modificações da branch atual com a passada no parâmetro\r - git remote add [nome-remote] [url] // configura um destino remoto com o nome informado\r   - git remote add gitHub https://github.com/Valdemir127/pi-node.git\r - git branch --set-upstream-to=[nome-remote]/[nome-branch-remote]\r   - git branch --set-upstream-to=gitHub/main\r - git branch -m [novo-nome] //renomeia a branch",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "myDev": "tsnd --respawn src/server.ts",
+    "dev": "tsx src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "prisma": "^5.11.0",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^8.2.0",
+    "@prisma/client": "^5.11.0",
+    "fastify": "^4.26.2",
+    "zod": "^3.22.4"
+  }
+}

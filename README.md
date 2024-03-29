@@ -1,0 +1,15 @@
+COMANDOS GIT
+- git init
+- git add . // add files or folders to repository local
+- git commit -m "add README.md"
+- git log //lista os logs de commits
+- git branch //mostra qual branch estou e lista todas
+- git branch [nome-branch] // cria uma nova branch local
+- git checkout [nome-branch] //muda para a branch escolida
+- git checkout -b [nome-branch] // cria uma nova branch local e muda para ela
+- git merge [nome-branch] //Combina as modificações da branch atual com a passada no parâmetro
+- git remote add [nome-remote] [url] // configura um destino remoto com o nome informado
+  - git remote add gitHub https://github.com/Valdemir127/pi-node.git
+- git branch --set-upstream-to=[nome-remote]/[nome-branch-remote]
+  - git branch --set-upstream-to=gitHub/main
+- git branch -m [novo-nome] //renomeia a branch
